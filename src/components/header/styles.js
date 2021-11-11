@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderSection = styled.header`
     width: 400px;
     height: 130px;
-    background: rgba(255,255,255, .2);
+    background: linear-gradient(-45deg, rgba(255,255,255, .2), rgba(255,255,255, .08));
     border-radius: 10px;
     display: flex;
     flex-direction: column;
