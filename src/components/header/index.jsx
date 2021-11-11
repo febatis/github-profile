@@ -15,21 +15,12 @@ import { context } from '../../context';
 const Header = () => {
     const ctx = useContext(context);
     const [searchedValue, setSearchedValue] = useState('');
-    // const getUserData = async () => {
-    //     try {
-    //         const response = await client.get(`/${searchedValue}`);
-    //         ctx.setUserData(response.data);
-    //         // console.log(response.data);
-    //     } catch(err) {
-    //         console.log(err);
-    //     }
-    // }
-
-    async function getUserData() {
+    const getUserData = async () => {
         try {
             const response = await client.get(`/${searchedValue}`);
+            const repos = await client.get(`/${searchedValue}/repos`);
             ctx.setUserData(response.data);
-            // console.log(response.data);
+            ctx.setRepos(repos.data);
         } catch(err) {
             console.log(err);
         }
