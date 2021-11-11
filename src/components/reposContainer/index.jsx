@@ -3,15 +3,18 @@ import {
     Title,
     ListOfReposContainer,
     Repo
-} from './styles';
+} from "./styles";
 
-const ReposContainer = props => {
+const ReposContainer = (props) => {
     return (
         <Section>
-            <Title>Repositórios de {(props.name)?.split(' ')[0]}</Title>
+            <Title>Repositórios de {props.name?.split(" ")[0]}</Title>
             <ListOfReposContainer>
-                {(props?.repos).map(repo => (
-                    <Repo onClick={() => window.open(repo?.html_url)} key={repo?.id}>
+                {(props?.repos).map((repo) => (
+                    <Repo
+                        onClick={() => window.open(repo?.html_url)}
+                        key={repo?.id}
+                    >
                         <h2>{repo?.name}</h2>
                         <p>{repo?.description}</p>
                     </Repo>
@@ -19,6 +22,6 @@ const ReposContainer = props => {
             </ListOfReposContainer>
         </Section>
     );
-}
+};
 
 export default ReposContainer;
