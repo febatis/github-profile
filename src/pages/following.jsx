@@ -10,7 +10,7 @@ const Following = props => {
     
     return (
         <Container>
-            <FollowingContainer name={ctx.userData?.name} repos={ctx.followings} />
+            <FollowingContainer name={ctx.userData?.name} following={ctx.following} />
         </Container>
     );
 };

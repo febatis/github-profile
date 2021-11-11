@@ -23,14 +23,14 @@ export const Title = styled.h1`
     height: 30px;
 `;
 
-export const ListOfReposContainer = styled.h1`
+export const ListOfFollowingContainer = styled.h1`
     height: 350px;
     width: 100%;
     padding: 10px;
     overflow-y: scroll;
 `;
 
-export const Repo = styled.h2`
+export const Followin = styled.h2`
     width: 100%;
     height: 80px;
     background: rgba(0, 0, 0, 0.05);
@@ -57,4 +57,11 @@ export const Repo = styled.h2`
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.1);
     }
+`;
+
+export const Photo = styled.img`
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+
 `;

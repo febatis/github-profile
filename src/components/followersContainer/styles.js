@@ -5,8 +5,7 @@ export const Section = styled.section`
     height: 400px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
-    border-bottom: 10px solid #ff0000;
-    /* ff7a00 */
+    border-bottom: 10px solid #ff7a00;
     margin-top: 15px;
 
     @media (max-width: 430px) {
@@ -44,7 +43,16 @@ export const Follower = styled.h2`
         overflow: hidden;
         color: #444;
     }
-
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #777;
+        width: 100%;
+        height: 30px;
+        overflow: hidden;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
     &:hover {
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.1);

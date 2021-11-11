@@ -10,9 +10,7 @@ const Followers = props => {
     
     return (
         <Container>
-            {/* {console.log(`${ctx.followers[0].login}`)}
-            {console.log(`${ctx.userData?.name}`)} */}
-            {/* <FollowersContainer login="matheusmartins21" photo="https://avatars.githubusercontent.com/u/33427278?v=4" /> */}
+            {console.log(`${ctx.followers[0].login}`)}
             <FollowersContainer name={ctx.userData?.name} followers={ctx.followers} />
         </Container>
     );

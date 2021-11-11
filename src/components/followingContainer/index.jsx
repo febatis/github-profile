@@ -1,25 +1,26 @@
 import {
     Section,
     Title,
-    ListOfReposContainer,
-    Repo
+    ListOfFollowingContainer,
+    Followin,
+    Photo
 } from "./styles";
 
 const FollowingContainer = (props) => {
     return (
         <Section>
-            <Title>Repositórios de {props.name?.split(" ")[0]}</Title>
-            <ListOfReposContainer>
-                {(props?.repos).map((repo) => (
-                    <Repo
-                        onClick={() => window.open(repo?.html_url)}
-                        key={repo?.id}
+            <Title>{props.name?.split(" ")[0]} está seguindo</Title>
+            <ListOfFollowingContainer>
+                {(props?.following).map((follow) => (
+                    <Followin
+                        onClick={() => window.open(follow?.html_url)}
+                        key={follow?.id}
                     >
-                        <h2>{repo?.name}</h2>
-                        <p>{repo?.description}</p>
-                    </Repo>
+                        <h2>{follow?.login}</h2>
+                        <Photo src={follow?.avatar_url}/>
+                    </Followin>
                 ))}
-            </ListOfReposContainer>
+            </ListOfFollowingContainer>
         </Section>
     );
 };

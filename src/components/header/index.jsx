@@ -20,11 +20,11 @@ const Header = () => {
             const response = await client.get(`/${searchedValue}`);
             const repos = await client.get(`/${searchedValue}/repos`);
             const followers = await client.get(`/${searchedValue}/followers`);
-            const followings = await client.get(`/${searchedValue}/following`);
+            const following = await client.get(`/${searchedValue}/following`);
             ctx.setUserData(response.data);
             ctx.setRepos(repos.data);
             ctx.setFollowers(followers.data);
-            ctx.setFollowing(followings.data);
+            ctx.setFollowing(following.data);
         } catch(err) {
             console.log(err);
         }
