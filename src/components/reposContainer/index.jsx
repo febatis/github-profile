@@ -1,9 +1,4 @@
-import {
-    Section,
-    Title,
-    ListOfReposContainer,
-    Repo
-} from "./styles";
+import { Section, Title, ListOfReposContainer, Repo } from "./styles";
 
 const ReposContainer = (props) => {
     return (

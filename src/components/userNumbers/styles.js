@@ -32,7 +32,7 @@ export const NumberContainer = styled.div`
     &:hover {
         cursor: pointer;
         background: rgba(0, 0, 0, 0.03);
-        transition: .4s ease;
+        transition: 0.4s ease;
         border-radius: 10px;
     }
 `;

@@ -38,10 +38,12 @@ export const Followin = styled.h2`
     padding: 10px;
     margin-bottom: 10px;
     h2 {
-        font-size: 15px;
-        width: 100%;
+        font-size: 20px;
+        max-width: fit-content;
         overflow: hidden;
         color: #444;
+        margin: 0;
+        display: inline-block;
     }
     p {
         font-size: 12px;

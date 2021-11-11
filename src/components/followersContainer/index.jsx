@@ -3,7 +3,7 @@ import {
     Title,
     ListOfFollowersContainer,
     Follower,
-    Photo
+    Photo,
 } from "./styles";
 
 const FollowersContainer = (props) => {
@@ -16,8 +16,8 @@ const FollowersContainer = (props) => {
                         onClick={() => window.open(follower?.html_url)}
                         key={follower?.id}
                     >
-                        <h2>{follower?.login}</h2>
-                        <Photo src={follower?.avatar_url}/>
+                        <h2>@{follower?.login}</h2>
+                        <Photo src={follower?.avatar_url} />
                     </Follower>
                 ))}
             </ListOfFollowersContainer>

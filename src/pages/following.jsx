@@ -1,16 +1,19 @@
 import React, { useContext } from "react";
 
-import Container from '../components/container';
+import Container from "../components/container";
 import FollowingContainer from "../components/followingContainer";
 
-import { context } from '../context';
+import { context } from "../context";
 
-const Following = props => {
+const Following = (props) => {
     const ctx = useContext(context);
-    
+
     return (
         <Container>
-            <FollowingContainer name={ctx.userData?.name} following={ctx.following} />
+            <FollowingContainer
+                name={ctx.userData?.name}
+                following={ctx.following}
+            />
         </Container>
     );
 };

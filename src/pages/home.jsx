@@ -16,24 +16,24 @@ export default function Home() {
         <Container>
             <Header />
             <UserContainer>
-                {ctx.userData?.name ?
-                <>
-                    <UserPicture
-                        url={ctx.userData?.avatar_url}
-                        altText={ctx.userData?.login}
-                    />
-                    <UserDetails
-                        name={ctx.userData?.name}
-                        login={ctx.userData?.login}
-                        bio={ctx.userData?.bio}
-                    />
-                    <UserNumbers
-                        repos={ctx.userData?.public_repos}
-                        followers={ctx.userData?.followers}
-                        following={ctx.userData?.following}
-                    />
-                </>
-                : undefined }
+                {ctx.userData?.name ? (
+                    <>
+                        <UserPicture
+                            url={ctx.userData?.avatar_url}
+                            altText={ctx.userData?.login}
+                        />
+                        <UserDetails
+                            name={ctx.userData?.name}
+                            login={ctx.userData?.login}
+                            bio={ctx.userData?.bio}
+                        />
+                        <UserNumbers
+                            repos={ctx.userData?.public_repos}
+                            followers={ctx.userData?.followers}
+                            following={ctx.userData?.following}
+                        />
+                    </>
+                ) : undefined}
             </UserContainer>
         </Container>
     );

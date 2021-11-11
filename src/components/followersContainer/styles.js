@@ -37,19 +37,14 @@ export const Follower = styled.h2`
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    justify-content: center;
-    align-self: center;
-
     h2 {
         font-size: 20px;
-        width: 100%;
+        max-width: fit-content;
         overflow: hidden;
         color: #444;
-        border: 0;
-        padding: 0;
         margin: 0;
+        display: inline-block;
     }
-    
     p {
         font-size: 12px;
         font-weight: 400;
