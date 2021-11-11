@@ -37,12 +37,19 @@ export const Follower = styled.h2`
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    justify-content: center;
+    align-self: center;
+
     h2 {
-        font-size: 15px;
+        font-size: 20px;
         width: 100%;
         overflow: hidden;
         color: #444;
+        border: 0;
+        padding: 0;
+        margin: 0;
     }
+    
     p {
         font-size: 12px;
         font-weight: 400;
@@ -57,4 +64,11 @@ export const Follower = styled.h2`
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.1);
     }
+`;
+
+export const Photo = styled.img`
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    float: right;
 `;

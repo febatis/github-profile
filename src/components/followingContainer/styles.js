@@ -60,8 +60,8 @@ export const Followin = styled.h2`
 `;
 
 export const Photo = styled.img`
-    width: 25%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 50%;
-
+    float: right;
 `;

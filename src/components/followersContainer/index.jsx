@@ -2,7 +2,8 @@ import {
     Section,
     Title,
     ListOfFollowersContainer,
-    Follower
+    Follower,
+    Photo
 } from "./styles";
 
 const FollowersContainer = (props) => {
@@ -16,6 +17,7 @@ const FollowersContainer = (props) => {
                         key={follower?.id}
                     >
                         <h2>{follower?.login}</h2>
+                        <Photo src={follower?.avatar_url}/>
                     </Follower>
                 ))}
             </ListOfFollowersContainer>
