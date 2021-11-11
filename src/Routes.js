@@ -14,7 +14,7 @@ import Following from './pages/following';
 const Routes = () => (
     <BRouter>
         <Switch>
-            <Route path="/" exact component={ Home } />
+            <Route path="/github-profile" exact component={ Home } />
             <Route path="/repos" component={ Repos } />
             <Route path="/followers" component={ Followers } />
             <Route path="/following" component={ Following } />
