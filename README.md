@@ -1,17 +1,12 @@
-# Github Profile
+# Github Profile :mag:
 
-### Descrição
+##### O [**Github Profile**](https://febatis.github.io/github-profile/) é um site que utiliza o GitHub Rest API, permitindo a pesquisa de um usuário e listar seus respectivos dados de repositórios públicos e seguidores.
 
-Github Profile é um projeto pensado para iniciantes no desenvolvimento web que utiliza de tecnologias e técnicas abordadas pelo mercado. Seu objetivo é passar para o aluno o necessário para ele começar a criar aplicações para o mercado de trabalho.
+Criado para ser utilizado no desafio proprosto por [**@benits**](https://github.com/benits) na plataforma [DIO](https://web.dio.me), o projeto visa a estrutura totalmente componentizada sendo criado a partir do React, styled-components, axios e hosteado através do gh-pages.
 
-O projeto utiliza: React, Styled Components, Axios, React-Router-DOM e React-Icons.
+<p align='center'>
+    <a href="https://febatis.github.io/github-profile/"/>
+    <img src="https://github.com/febatis/github-profile/blob/main/src/example.png" alt="Exemplo de pesquisa de um usuário" style="zoom:40%;"/>
+</p>
 
-OBS.: Este repositório refere-se aos arquivos iniciais do projeto. Caso queira ver ele completo, [clique aqui](https://github.com/anthonyvii27/ytb-github-profile-final).
-
-### Aula
-
-Caso queira assistir a aula onde é ensinada a construir o restante do projeto, [clique aqui](https://www.youtube.com/watch?v=kqp1lNnv6K8)
-
-### Licença
-
-A utilização do conteúdo deste repositório é livre e sem a necessidade de dar créditos.
+###### Créditos: baseado na aula da [**@anthonyvii27**](https://github.com/anthonyvii27) através do [**YouTube**](https://www.youtube.com/watch?v=kqp1lNnv6K8).
